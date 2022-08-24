@@ -1,0 +1,5 @@
+---
+- name: ocp login
+  hosts: all
+  tasks:
+     - command: oc login
