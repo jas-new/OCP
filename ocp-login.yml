@@ -2,4 +2,5 @@
 - name: ocp login
   hosts: all
   tasks:
-     - shell: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
+     - shell: cat /etc/hosts
+#     - shell: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
