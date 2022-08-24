@@ -2,4 +2,4 @@
 - name: ocp login
   hosts: all
   tasks:
-     - command: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
+     - shell: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
