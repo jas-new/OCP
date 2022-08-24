@@ -1,6 +1,5 @@
 ---
 - name: ocp login
   hosts: all
-  become: yes
   tasks:
      - command: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
