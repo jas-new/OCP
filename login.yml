@@ -5,8 +5,8 @@
   environment:
     KUBECONFIG: "/opt/aws-ocp4/aws-manifests/auth/kubeconfig"
   tasks:
-  - name: login to cluster using kubeadmin
-    shell: "oc login -u kubeadmin -p 7mbEx-Cm3eI-Ha4QW-SIB7u --server="https://api.ocp.silvereye.in:6443" --insecure-skip-tls-verify=true"
+#  - name: login to cluster using kubeadmin
+#    shell: "oc login -u kubeadmin -p 7mbEx-Cm3eI-Ha4QW-SIB7u --server="https://api.ocp.silvereye.in:6443" --insecure-skip-tls-verify=true"
   - name: Verify login
     shell: "oc whoami"
     register: logged_in_user
