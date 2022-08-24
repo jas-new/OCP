@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   environment:
-    KUBECONFIG: "//opt/aws-ocp4/aws-manifests/auth/kubeconfig"
+    KUBECONFIG: "/opt/aws-ocp4/aws-manifests/auth/kubeconfig"
   tasks:
   - name: login to cluster using kubeadmin
     shell: "oc login -u kubeadmin -p 7mbEx-Cm3eI-Ha4QW-SIB7u --server="https://api.ocp.silvereye.in:6443" --insecure-skip-tls-verify=true"
