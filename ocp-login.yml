@@ -2,6 +2,7 @@
 - name: ocp login
   hosts: all
   tasks:
+     - shell: export KUBECONFIG=/opt/aws-ocp4/aws-manifests/auth/kubeconfig && oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443  
      - shell: export KUBECONFIG=/opt/aws-ocp4/aws-manifests/auth/kubeconfig && oc get nodes
-#     - shell: cat /etc/hosts
-#     - shell: oc login --token=sha256~pJZkWqbO3OfXrtuqsVb-a2_8yFneHG5sNtYpczlqvVo --server=https://api.ocp.silvereye.in:6443
+
+
